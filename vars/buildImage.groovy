@@ -15,6 +15,8 @@ spec:
     env:
     - name: DOCKER_TLS_CERTDIR
       value: ""
+    securityContext:
+      privileged: true
     volumeMounts:
     - name: dind-storage
       mountPath: /var/lib/docker
