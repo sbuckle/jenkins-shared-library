@@ -11,6 +11,9 @@ spec:
   containers:
   - name: docker
     image: docker
+    env:
+    - name: DOCKER_HOST
+      value = tcp://locahost:2375
     tty: true
   - name: dind
     image: docker:dind
