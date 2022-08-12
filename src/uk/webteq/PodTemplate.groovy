@@ -1,8 +1,8 @@
 public class PodTemplate {
     
-    static String DOCKER_BUILD_TEMPLATE = getDockerPodTemplate()
+    public static final String DOCKER_BUILD_TEMPLATE = getDockerPodTemplate()
 
-    static String getDockerPodTemplate() {
+    public static String getDockerPodTemplate() {
         return '''
 apiVersion: 1.0
 kind: Pod
