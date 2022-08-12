@@ -7,6 +7,8 @@ spec:
   - name: docker
     image: docker
     env:
+    - name: DOCKER_HOST
+      value: tcp://0.0.0.0:2375
     - name: DOCKER_TLS_VERIFY
       value: 0
     tty: true
