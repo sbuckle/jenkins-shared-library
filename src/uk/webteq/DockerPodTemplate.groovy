@@ -1,3 +1,5 @@
+package uk.webteq
+
 class DockerPodTemplate {
     
     def getTemplate() {
