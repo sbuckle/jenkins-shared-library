@@ -1,7 +1,6 @@
 public class PodTemplate {
     
-    static String DOCKER_BUILD_TEMPLATE
-        = getDockerPodTemplate()
+    static String DOCKER_BUILD_TEMPLATE = getDockerPodTemplate()
 
     static String getDockerPodTemplate() {
         return '''
