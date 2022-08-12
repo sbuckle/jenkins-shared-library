@@ -8,7 +8,7 @@ spec:
     image: docker
     env:
     - name: DOCKER_HOST
-      value: tcp://0.0.0.0:2375
+      value: tcp://127.0.0.1:2375
     tty: true
   - name: dind
     image: docker:dind
