@@ -4,7 +4,7 @@ class DockerPodTemplate {
     
     def getTemplate() {
         return '''
-apiVersion: 1.0
+apiVersion: v1
 kind: Pod
 spec:
   containers:
