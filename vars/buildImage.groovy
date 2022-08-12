@@ -1,3 +1,4 @@
+@groovy.transform.Field
 def DOCKER = '''
 apiVersion: v1
 kind: Pod
