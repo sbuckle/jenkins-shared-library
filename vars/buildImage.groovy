@@ -1,3 +1,9 @@
+import uk.webteq.*
+
+def podTemplate() {
+  return DockerPodTemplate().getTemplate()
+}
+
 @groovy.transform.Field
 def DOCKER = '''
 apiVersion: v1
