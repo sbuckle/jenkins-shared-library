@@ -12,7 +12,7 @@ spec:
     image: docker
     env:
     - name: DOCKER_HOST
-      value: tcp://locahost:2375
+      value: tcp://localhost:2375
     tty: true
   - name: dind
     image: docker:19.03.0-dind
