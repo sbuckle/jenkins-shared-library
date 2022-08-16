@@ -15,7 +15,7 @@ spec:
       value: tcp://locahost:2375
     tty: true
   - name: dind
-    image: docker:dind
+    image: docker:19.03.0-dind
     env:
     - name: DOCKER_TLS_CERTDIR
       value: ""
