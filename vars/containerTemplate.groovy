@@ -1,5 +1,3 @@
-import uk.webteq.*
-
 def call(Map m) {
-    return new ContainerDefinition(m.name, m.image)
+    return new uk.webteq.ContainerDefinition(m.name, m.image)
 }
