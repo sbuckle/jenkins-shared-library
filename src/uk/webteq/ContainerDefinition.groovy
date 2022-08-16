@@ -1,6 +1,6 @@
 package uk.webteq
 
-class ContainerDefinition() {
+class ContainerDefinition {
     String name, image
 
     ContainerDefinition(name, image) {
