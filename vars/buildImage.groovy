@@ -1,7 +1,7 @@
 import uk.webteq.*
 
 def podTemplate() {
-  return DockerPodTemplate().getTemplate()
+  return new DockerPodTemplate().getTemplate()
 }
 
 @groovy.transform.Field
