@@ -7,7 +7,7 @@ class PodTemplate {
 apiVersion: v1
 kind: Pod
 spec:
-  containers:<% for ( c in $containers ) { %>
+  containers:<% for ( c in containers ) { %>
   - name: $c.name
     image: $c.image<% } %>
 '''
