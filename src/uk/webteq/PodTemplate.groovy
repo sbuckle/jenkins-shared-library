@@ -9,7 +9,8 @@ kind: Pod
 spec:
   containers:<% for ( c in containers ) { %>
   - name: $c.name
-    image: $c.image<% } %>
+    image: $c.image
+    tty: true<% } %>
 '''
         def engine = new groovy.text.SimpleTemplateEngine()
         def binding = [
