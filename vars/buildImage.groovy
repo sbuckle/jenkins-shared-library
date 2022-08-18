@@ -1,5 +1,9 @@
 import uk.webteq.*
 
+def podTemplate(Map config) {
+  return new PodTemplate().getTemplate(config)
+}
+
 def podTemplate() {
   return new DockerPodTemplate().getTemplate()
 }
