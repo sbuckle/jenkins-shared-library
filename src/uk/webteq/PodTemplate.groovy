@@ -5,7 +5,9 @@ class PodTemplate {
     def getTemplate(Map config) {
         def podYaml = '''
 apiVersion: v1
-kind: Pod
+kind: Pod<% if (name != '') { %>
+metadata:
+  name: <%= name %> <% } %>
 spec:
   containers:<% for ( c in containers ) { %>
   - name: $c.name
@@ -15,6 +17,7 @@ spec:
         def engine = new groovy.text.SimpleTemplateEngine()
         def binding = [
             "containers": config.containers
+            "name": config.get('name', '')
         ]
         def tmpl = engine.createTemplate(podYaml).make(binding)
         return tmpl.toString()
