@@ -12,7 +12,7 @@ spec:
   containers:<% for ( c in containers ) { %>
   - name: $c.name
     image: $c.image
-    tty: $c.tty<% } %>
+    tty: $c.ttyEnabled<% } %>
 '''
         def engine = new groovy.text.SimpleTemplateEngine()
         def binding = [
