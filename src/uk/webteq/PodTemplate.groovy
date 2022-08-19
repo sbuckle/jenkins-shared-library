@@ -7,7 +7,7 @@ class PodTemplate {
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-docker
+  name: 'hello-docker'
 spec:
   containers:<% for ( c in containers ) { %>
   - name: $c.name
