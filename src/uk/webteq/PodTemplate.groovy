@@ -5,9 +5,9 @@ class PodTemplate {
     def getTemplate(Map config) {
         def podYaml = '''
 apiVersion: v1
-kind: Pod<% if (name != '') { %>
+kind: Pod
 metadata:
-  name: <%= name %> <% } %>
+  name: $name
 spec:
   containers:<% for ( c in containers ) { %>
   - name: $c.name
