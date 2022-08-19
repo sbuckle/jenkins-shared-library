@@ -16,7 +16,7 @@ spec:
 '''
         def engine = new groovy.text.SimpleTemplateEngine()
         def binding = [
-            "containers": config.containers
+            "containers": config.containers,
             "name": config.get('name', '')
         ]
         def tmpl = engine.createTemplate(podYaml).make(binding)
