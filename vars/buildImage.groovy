@@ -4,7 +4,7 @@ def podTemplate(Map config) {
   return new PodTemplate().getTemplate(config)
 }
 
-def podTemplate() {
+def dockerTemplate(Map config = [:]) {
   return new DockerPodTemplate().getTemplate()
 }
 
